@@ -1,0 +1,64 @@
+---
+tag: 📅 
+---
+# Day Planner <%tp.date.now("YYYY-MM-DD")%>
+<% tp.web.daily_quote() %>
+
+---
+
+**WeekNote**:: [[Daily/2021-W<% tp.date.now("WW", 7) %>|2021-W<% tp.date.now("WW", 7) %>]] | **Date**:: <%tp.date.now("YYYY-MM-DD")%>
+___
+
+`ris:SkipBack` [[Daily/<%tp.date.now("YYYY-MM-DD", -1)%>|<%tp.date.now("YYYY-MM-DD", -1)%>]] - [[Daily/<%tp.date.now("YYYY-MM-DD", 1)%>|<%tp.date.now("YYYY-MM-DD", 1)%>]] `ris:SkipForward`
+
+## Reminders
+> Buena suerte, mala suerte, quien sabe. 
+
+---
+
+ ![[Daily/<%tp.date.now("YYYY-MM-DD", -1)%>#Improvement for Tomorrow]]
+
+
+### Today's Tasks
+- 
+
+
+## Journals
+
+####  Stocks
+**How is the Snifer@L4b's  doing? Did you do any note?**
+- 
+
+**What is the daily post  talking about today?**
+- *PostDayURL*::
+
+**keep in mind?**
+
+- 
+#### Improvement for Tomorrow
+
+- 
+
+## Meetings
+-   Participantes::
+-   Link::
+-   Notes:: [[Daily/Meetings/<%tp.date.now("YYYY-MM-DD")%>-Meet|<%tp.date.now("YYYY-MM-DD")%>]]
+---
+
+## Inbox 
+
+ ![[Inbox/<%tp.date.now("YYYY-MM-DD")%>-CheckNote]]
+ 
+___
+## Today's Notes
+
+
+```dataview
+table file.ctime from "" where file.cday = date("<%tp.date.now("YYYY-MM-DD")%>")
+```
+
+---
+
+
+***Aniversary***:: <% moment("12-20", "MM-DD").fromNow() %> in  <!-- Days until any "MM-DD" date this year/next year --> <%+* let edate = moment("12-20", "MM-DD"); let from = moment().startOf('day'); edate.diff(from, "days") >= 0 ? tR += edate.diff(from, "days") : tR += edate.add(1, "year").diff(from, "days") %> days.
+
